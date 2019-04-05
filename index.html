@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script type="module" src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <audio
+      preload="auto"
+      id="music"
+      autoplay
+      loop
+      src="./audio/background-audio.mp3"
+    >
+      Your browser does not support the
+      <code>audio</code> element.
+    </audio>
+    <main class="wrapper">
+      <div id="scene">
+        <div id="char-grid"></div>
+        <div id="proj-grid"></div>
+      </div>
+      <aside class="lives">
+        <img class="life" src="./ui/heart.png" alt="" />
+        <img class="life" src="./ui/heart.png" alt="" />
+        <img class="life" src="./ui/heart.png" alt="" />
+      </aside>
+      <aside class="time-elapsed">
+        <h1 id="time">Time Elapsed:</h1>
+      </aside>
+      <div id="defeat">
+        <h1>DEFEAT</h1>
+        <p>You lasted: 40 sec</p>
+        <p class="nope">(thats what she said)</p>
+      </div>
+    </main>
+  </body>
+</html>
